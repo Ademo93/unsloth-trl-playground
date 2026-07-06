@@ -1,5 +1,9 @@
 # Unsloth + TRL Playground
 
+[![CI](https://github.com/Ademo93/unsloth-trl-playground/actions/workflows/ci.yml/badge.svg)](https://github.com/Ademo93/unsloth-trl-playground/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ademo93/unsloth-trl-playground/blob/main/notebooks/unsloth_qwen_alpaca.ipynb)
+
 Fast LLM fine-tuning experiments comparing **TRL** (the Hugging Face reference stack) and **Unsloth** (hand-written Triton kernels, ~2x faster and ~60% less VRAM on a single GPU).
 
 Same dataset, same LoRA settings, two backends — so the speed/memory trade-off is measured, not guessed.
@@ -38,7 +42,8 @@ src/
   sft_unsloth.py    # Unsloth FastLanguageModel, same hyperparameters
   benchmark.py      # parse both runs' metrics and print a comparison table
 notebooks/
-  colab_unsloth.md  # notes for running the Unsloth path on free Colab
+  unsloth_qwen_alpaca.ipynb  # ready-to-run Colab version (T4-adjusted: fp16)
+  colab_unsloth.md           # notes for running the Unsloth path on free Colab
 ```
 
 ## Benchmark protocol
