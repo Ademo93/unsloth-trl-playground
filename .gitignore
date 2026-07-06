@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+outputs/
+wandb/
+*.safetensors
+*.bin
+*.gguf
+.ipynb_checkpoints/
+.DS_Store
+metrics_*.json

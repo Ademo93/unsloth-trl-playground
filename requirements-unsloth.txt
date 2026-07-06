@@ -1,0 +1,3 @@
+# Unsloth pins its own transformers/trl/peft versions — install it alone first.
+unsloth
+datasets>=2.20
